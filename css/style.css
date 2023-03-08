@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
 
@@ -61,7 +61,7 @@ nav ul li a button:hover {
 nav ul li a::after {
     content: '';
     height: 2px;
-    background: red;
+    background: rgb(200, 0, 0);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -79,11 +79,12 @@ nav ul li a:hover::after {
 
 .header-text h1 {
     font-size: 50px;
+    font-weight: 700;
     margin-top: 15px;
 }
 
 .header-text h1 span {
-    color: red;
+    color: rgb(200, 0, 0);
 }
 
 .box-icons a i {
@@ -150,7 +151,7 @@ button:hover {
 .sub-title {
     margin: 15px 0;
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -171,7 +172,7 @@ button:hover {
     content: '';
     width: 0;
     height: 2px;
-    background: red;
+    background: rgb(200, 0, 0);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -189,7 +190,7 @@ button:hover {
 }
 
 .tab-contents ul li span {
-    color: #ff004f;
+    color: rgb(200, 0, 0);
     font-size: 16px;
 }
 
@@ -208,6 +209,90 @@ button:hover {
     padding: 50px 0;
 }
 
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(200,0,0));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h2 {
+    font-weight: 500;
+}
+
+.layer p {
+    margin: 10px auto;
+}
+
+.layer a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(200, 0, 0);
+    font-size: 18px;
+    line-height: 50px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 2px solid rgb(200, 0, 0);
+    padding: 12px 50px;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: rgb(200, 0, 0);
+}
+
 
 /* ========== Contact ========== */
 
@@ -224,7 +309,7 @@ button:hover {
 }
 
 .contact-left p i {
-    color: #ff004f;
+    color: rgb(200, 0, 0);
     margin-right: 15px;
     font-size: 20px;
 }
