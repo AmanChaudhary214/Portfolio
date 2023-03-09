@@ -252,7 +252,7 @@ button:hover {
 
 .skill-list>div {
     border-radius: 20px;
-    box-shadow: rgba(200, 0, 0, 0.5) 3px 3px, rgba(255, 255 , 255, 0.5) -3px -3px;
+    box-shadow: rgba(200, 0, 0, 0.5) 3px 3px;
 }
 
 .skill-list>div:hover {
@@ -499,11 +499,13 @@ form button {
     margin-top: 20px;
 }
 
-/* ----------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+
 nav .fa-solid {
     display: none;
 }
 
+/* ========== For Mobiles ========== */
 @media only screen and (max-width: 540px) {
     #header {
         background-image: url(/images/header\ 4\ potrait.jpg);
@@ -625,6 +627,7 @@ nav .fa-solid {
     }
 }
 
+/* ========== For Tablets ========== */
 @media only screen and (min-width:541px) and (max-width: 1024px) {
     .header-text {
         margin-top: 50%;
