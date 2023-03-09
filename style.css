@@ -10,6 +10,8 @@ body {
     color: #fff;
 }
 
+
+/* ========== Header ========== */
 #header {
     width: 100%;
     height: 100vh;
@@ -30,7 +32,7 @@ nav {
 }
 
 .logo {
-    width: 175px;
+    width: 200px;
 }
 
 nav ul li {
@@ -79,12 +81,13 @@ nav ul li a:hover::after {
 
 .header-text h1 {
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 15px;
 }
 
 .header-text h1 span {
     color: rgb(200, 0, 0);
+    font-weight: 600;
 }
 
 .box-icons a i {
@@ -122,7 +125,6 @@ button:hover {
 
 
 /*========== About Me ==========*/
-
 #about {
     padding: 80px 0;
     color: #ababab;
@@ -135,29 +137,50 @@ button:hover {
 }
 
 .about-col-1 {
-    flex-basis: 35%;
     margin: auto;
+    padding: 10px;
+    flex-basis: 25%;
 }
 
 .about-col-1 img{
-    width: 75%;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .about-col-2 {
-    flex-basis: 60%;
+    padding-left: 30px;
+    flex-basis: 70%;
     font-size: 16px;
 }
 
 .sub-title {
-    margin: 15px 0;
-    font-size: 50px;
+    margin: 10px 0;
+    font-size: 40px;
     font-weight: 500;
     color: #fff;
 }
 
+.sub-title:hover {
+    color: rgb(200, 0, 0);
+    font-weight: 500;
+}
+
+.details {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+.details div {
+    margin-top: 15px;
+    margin-right: 100px;
+    padding: 10px 20px;
+    border: 1px solid rgb(200, 0, 0);
+    border-radius: 6px;
+}
+
 .tab-titles {
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 30px;
 }
 
 .tab-links {
@@ -185,7 +208,7 @@ button:hover {
 
 .tab-contents ul li {
     list-style: none;
-    margin: 10px 0;
+    margin: 10px 0 0;
     font-size: 14px;
 }
 
@@ -203,8 +226,20 @@ button:hover {
 }
 
 
-/* ========== My Project ========== */
+/* ========== Skills ========== */
+#skills {
+    padding: 30px 0;
+}
 
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+
+/* ========== My Project ========== */
 #portfolio {
     padding: 50px 0;
 }
@@ -232,7 +267,7 @@ button:hover {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), rgb(200,0,0));
+    background: linear-gradient(rgba(0,0,0,0.6), black);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -249,11 +284,13 @@ button:hover {
 }
 
 .layer h2 {
-    font-weight: 500;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .layer p {
     margin: 10px auto;
+    font-size: 16px;
 }
 
 .layer a {
@@ -282,7 +319,7 @@ button:hover {
     margin: 50px auto;
     width: fit-content;
     border: 2px solid rgb(200, 0, 0);
-    padding: 12px 50px;
+    padding: 10px 40px;
     border-radius: 6px;
     color: #fff;
     text-decoration: none;
@@ -294,8 +331,10 @@ button:hover {
 }
 
 
-/* ========== Contact ========== */
+/* ========== Statistics ========== */
 
+
+/* ========== Contact ========== */
 .contact-left {
     flex-basis: 35%;
 }
@@ -323,7 +362,7 @@ form input, form textarea {
     border: 0;
     outline: none;
     background: #262626;
-    padding: 15px;
+    padding: 10px 15px;
     margin: 15px 0;
     color: #ababab;
     font-size: 16px;
@@ -331,9 +370,9 @@ form input, form textarea {
 }
 
 form button {
-    padding: 12px 50px;
+    padding: 10px 30px;
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
