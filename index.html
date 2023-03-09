@@ -20,7 +20,7 @@
         <div class="container">
             <nav>
                 <img src="/images/logo.png" alt="logo" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -28,7 +28,9 @@
                     <li><a href="#statistics">Statistics</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="/images/Aman_Chaudhary_Resume.pdf" download>Download Resume</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i></i>
             </nav>
             <div class="header-text">
                 <p>Java Backend Developer</p>
@@ -97,9 +99,36 @@
     <!-- ========== Skills ========== -->
     <div id="skills">
         <div class="container">
-            <h1 class="sub-title">Skills</h1>
+            <h1 class="sub-title">Skills & Tools | <img width="35px" src="/images/skill avatar.png" alt=""></h1>
             <div class="skill-list">
-                <div></div>
+                <div>
+                    <h2>Languages & Framework <i class="fa-solid fa-code"></i></h2>
+                    <div>
+                        <img src="icons/java-programming-language-icon.png" alt="java" title="Java">
+                        <img src="icons/javascript-programming-language-icon.png" alt="javascript" title="JavaScript">
+                        <img src="icons/mysql-icon.png" alt="mysql" title="MySQL">
+                        <img src="icons/html-icon.png" alt="html" title="HTML5">
+                        <img src="icons/css-icon.png" alt="css" title="CSS">
+                    </div>
+                </div>
+                <div>
+                    <h2>Tech Tools <i class="fa-solid fa-code-branch"></i></h2>
+                    <div>
+                        <img src="icons/github-icon.png" alt="github" title="GitHub">
+                        <img src="icons/visual-studio-code-icon.png" alt="vscode" title="Visual Studio Code">
+                        <img src="icons/postman-icon.png" alt="postman" title="Postman">
+                        <img src="icons/notion-icon.png" alt="notion" title="Notion">
+                        <img src="icons/codepen-icon.png" alt="codepen" title="CodePen">
+                    </div>
+                </div>
+                <div>
+                    <h2>Other Design Tools <i class="fa-solid fa-compass-drafting"></i></h2>
+                    <div>
+                        <img src="icons/adobe-lightroom-icon.png" alt="lightroom" title="Lightroom">
+                        <img src="icons/autocad-icon.png" alt="autocad" title="AutoCAD">
+                        <img src="icons/canva-icon.png" alt="canva" title="Canva">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -139,7 +168,7 @@
             <a href="#" class="btn">See more</a>
         </div>
     </div>
-    
+
     <!-- ========== Statistics ========== -->
     <div id="statistics">
 
@@ -151,6 +180,9 @@
             <div class="row">
                 <div class="contact-left">
                     <h2>I'm also reachable at :</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i> aman.chaudhary214@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9454260173</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Vikas Nagar, Lucknow, Uttar Pradesh</p>
                     <div class="box-icons">
                         <a href="https://github.com/AmanChaudhary214" target="_blank"><i class='bx bxl-github'></i></a>
                         <a href="https://www.linkedin.com/in/amanchaudhary214/" target="_blank"><i
@@ -159,16 +191,12 @@
                         <a href="https://www.instagram.com/tilted_._tripod/" target="_blank"><i
                                 class='bx bxl-instagram'></i></a>
                     </div>
-                    <p><i class="fa-solid fa-paper-plane"></i> aman.chaudhary214@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +91 9454260173</p>
-                    <p><i class="fa-solid fa-location-dot"></i> 60 Shiv Vihar Colony, Vikas Nagar, Lucknow (226022)</p>
-                    <img src="/images/avatar.png" alt="">
                 </div>
                 <div class="contact-right">
                     <form>
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6">Your message</textarea>
+                        <textarea name="Message" rows="5">Your message</textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
@@ -197,6 +225,18 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-250px";
+    }
 </script>
 
 </html>

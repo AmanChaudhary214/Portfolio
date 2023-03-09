@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -91,9 +91,10 @@ nav ul li a:hover::after {
 }
 
 .box-icons a i {
-    margin-top: 20px ;
+    margin-top: 20px;
     margin-right: 15px;
     color: #fff;
+    font-size: 35px;
 }
 
 .box-icons a i:hover {
@@ -107,7 +108,7 @@ nav ul li a:hover::after {
 button {
     margin-top: 20px;
     font-size: 16px;
-    padding: 8px 10px;
+    padding: 10px 12px;
     color: #fff;
     background-color: transparent;
     border-radius: 7px;
@@ -126,7 +127,7 @@ button:hover {
 
 /*========== About Me ==========*/
 #about {
-    padding: 80px 0;
+    padding: 50px 0;
     color: #ababab;
 }
 
@@ -137,17 +138,16 @@ button:hover {
 }
 
 .about-col-1 {
-    margin: auto;
     padding: 10px;
     flex-basis: 25%;
 }
 
-.about-col-1 img{
+.about-col-1 img {
     width: 100%;
     border-radius: 20px;
 }
 
-.about-col-1 img:hover{
+.about-col-1 img:hover {
     cursor: pointer;
     color: #fff;
     transform: scale(1.05);
@@ -156,7 +156,6 @@ button:hover {
 }
 
 .about-col-2 {
-    padding-left: 30px;
     flex-basis: 70%;
     font-size: 16px;
 }
@@ -177,10 +176,11 @@ button:hover {
     display: flex;
     margin: auto;
     text-align: center;
+    justify-content: space-evenly;
 }
+
 .details div {
     margin-top: 15px;
-    margin-right: 100px;
     padding: 10px 20px;
     border: 1px solid rgb(200, 0, 0);
     border-radius: 6px;
@@ -250,8 +250,50 @@ button:hover {
 .skill-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    grid-gap: 60px;
     margin-top: 50px;
+}
+
+.skill-list>div {
+    border-radius: 20px;
+    box-shadow: rgba(200, 0, 0, 0.4) 4px 4px, rgba(255, 255 , 255, 0.4) -4px -4px;
+}
+
+.skill-list>div:hover {
+    transform: scale(1.05);
+    transition: 0.2s linear;
+    z-index: 2;
+}
+
+.skill-list h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.skill-list h2:hover {
+    color: rgb(200, 0, 0);
+    text-decoration: underline;
+}
+
+.skill-list div div {
+    padding-top: 20px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-list div div img {
+    width: 40%;
+    margin: 25px ;
+}
+
+.skill-list div div img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s linear;
+    z-index: 2;
 }
 
 
@@ -283,7 +325,7 @@ button:hover {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), black);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), black);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -332,7 +374,7 @@ button:hover {
 
 .btn {
     display: block;
-    margin: 50px auto;
+    margin: 30px auto;
     width: fit-content;
     border: 2px solid rgb(200, 0, 0);
     padding: 10px 40px;
@@ -354,6 +396,7 @@ button:hover {
 .contact-left {
     padding-left: 10px;
     flex-basis: 35%;
+    margin-bottom: 50px;
 }
 
 .contact-right {
@@ -366,11 +409,11 @@ button:hover {
 }
 
 .contact-left p {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .contact-left p i {
-    color: r#fff;
+    color: #fff;
     margin-right: 15px;
     font-size: 20px;
 }
@@ -384,7 +427,7 @@ button:hover {
 
 #contact .box-icons a i {
     font-size: 40px;
-    margin-top: 20px ;
+    margin-top: 20px;
     margin-right: 15px;
     color: #fff;
 }
@@ -397,25 +440,18 @@ button:hover {
     z-index: 2;
 }
 
-.contact-left img {
-    width: 25%;
-    margin: 20px;
-    position: relative;
-    left: 65%;
-    bottom: 40%;
-}
-
 .contact-right form {
     width: 100%;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
     background: #262626;
     padding: 10px 15px;
-    margin: 15px 0;
+    margin-bottom: 20px;
     color: #ababab;
     font-size: 16px;
     border-radius: 6px;
@@ -431,8 +467,151 @@ form button {
 .copyright {
     width: 100%;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+}
+
+/* ----------------------------------------------------- */
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 540px) {
+    #header {
+        background-image: url(/images/header\ 4\ potrait.jpg);
+    }
+
+    .header-text {
+        margin-top: 55%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: rgb(200, 0, 0);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+        font-size: 30px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+    #contact .box-icons a i {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-right: 15px;
+        color: #fff;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:541px) and (max-width: 1024px) {
+    .header-text {
+        margin-top: 50%;
+        font-size: 18px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: rgb(200, 0, 0);
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+        font-size: 30px;
+    }
+
+    #contact .box-icons a i {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-right: 15px;
+        color: #fff;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
 }
