@@ -243,10 +243,6 @@ button:hover {
 
 
 /* ========== Skills ========== */
-#skills {
-    padding: 30px 0;
-}
-
 .skill-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -298,8 +294,8 @@ button:hover {
 
 
 /* ========== My Project ========== */
-#portfolio {
-    padding: 50px 0;
+#projects {
+    padding-top: 50px;
 }
 
 .work-list {
@@ -310,14 +306,16 @@ button:hover {
 }
 
 .work {
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
 .work img {
     width: 100%;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
@@ -326,7 +324,8 @@ button:hover {
     width: 100%;
     height: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.6), black);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -352,15 +351,16 @@ button:hover {
 }
 
 .layer a {
-    margin-top: 10px;
+    margin: 10px;
+    padding: 10px 20px;
     text-decoration: none;
     color: rgb(200, 0, 0);
     font-size: 18px;
     line-height: 50px;
-    background: #fff;
+    background: #ababab;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 15%;
     text-align: center;
 }
 
@@ -374,7 +374,7 @@ button:hover {
 
 .btn {
     display: block;
-    margin: 30px auto;
+    margin: 30px auto 0;
     width: fit-content;
     border: 2px solid rgb(200, 0, 0);
     padding: 10px 40px;
@@ -390,6 +390,30 @@ button:hover {
 
 
 /* ========== Statistics ========== */
+#statistics {
+    padding: 50px 0;
+}
+
+.github-stats1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.github-stats1 img {
+    width: 100%;
+}
+
+.github-stats2 {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.github-stats2 img {
+    width: 100%;
+}
 
 
 /* ========== Contact ========== */
@@ -406,6 +430,8 @@ button:hover {
 .contact-left h2 {
     font-weight: 600;
     text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: 40px;
 }
 
 .contact-left p {
@@ -427,7 +453,7 @@ button:hover {
 
 #contact .box-icons a i {
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-right: 15px;
     color: #fff;
 }
@@ -539,8 +565,51 @@ nav .fa-solid {
         margin-right: 20px;
     }
 
+    .layer h2 {
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    .layer p {
+        margin: 10px auto;
+        font-size: 10px;
+    }
+
+    .layer a {
+        margin: 10px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: rgb(200, 0, 0);
+        font-size: 18px;
+        line-height: 50px;
+        background: #ababab;
+        width: 50px;
+        height: 50px;
+        border-radius: 15%;
+        text-align: center;
+    }
+
+    .contact-left h2 {
+        font-weight: 600;
+        text-decoration: underline;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-left p {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .contact-left p i {
+        color: #fff;
+        margin-right: 15px;
+        font-size: 12px;
+    }
+
     #contact .box-icons a i {
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 20px;
         margin-right: 15px;
         color: #fff;
@@ -598,17 +667,35 @@ nav .fa-solid {
     .sub-title {
         font-size: 30px;
     }
+    
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .contact-left h2 {
+        font-weight: 600;
+        text-decoration: underline;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-left p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .contact-left p i {
+        color: #fff;
+        margin-right: 15px;
+        font-size: 14px;
+    }
 
     #contact .box-icons a i {
         font-size: 30px;
         margin-top: 20px;
         margin-right: 15px;
         color: #fff;
-    }
-
-    .contact-left,
-    .contact-right {
-        flex-basis: 100%;
     }
 
     .copyright {
